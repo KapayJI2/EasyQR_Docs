@@ -1,0 +1,32 @@
+type: object
+properties:
+  _id:
+    type: string
+  mainTextColor:
+    type: string
+  mainColor:
+    type: string
+  buttonTextColor:
+    type: string
+  buttonColor:
+    type: string
+  loght:
+    type: string
+  textLight:
+    type: string
+  stroke:
+    type: string
+  orderMadeBlock:
+    type: string
+  backgroundColor:
+    type: string
+  popupBackup:
+    type: string
+  popupInputColor:
+    type: string
+  popupBorder:
+    type: string
+  useLoaderImage:
+    type: boolean
+  useBackgrounImg:
+    type: boolean

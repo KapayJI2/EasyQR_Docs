@@ -1,0 +1,44 @@
+booking_one:
+  get:
+    summary: Получить бронь по id
+    parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: string
+    responses:
+      '200':
+        description: Получить бронь
+        content:
+          application/json:
+            schema:
+              $ref: './Booking.yml'
+booking_list:
+  get:
+    summary: Получить список броней
+    responses:
+      '200':
+        description: Список броней
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: './Booking.yml'
+booking_create:
+  post:
+    summary: Создаёт новую бронь
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: './Booking.yml'
+      response:
+        '201':
+          descritption: Created
+          content:
+            application/json:
+              schema:
+                $ref: './Booking.yml'

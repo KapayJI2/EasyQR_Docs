@@ -1,0 +1,8 @@
+type: object
+properties:
+  _id:
+    type: string
+  title:
+    type: string
+  active:
+    type: boolean

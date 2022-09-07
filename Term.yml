@@ -1,0 +1,18 @@
+type: object
+properties:
+  _id:
+    type: string
+  juryAddress:
+    type: string
+  physicalAddress:
+    type: string
+  emailAddress:
+    type: string
+  phoneNumber:
+    type: string
+  shortName:
+    type: string
+  webSite:
+    type: string
+  bankDeails:
+    type: string

@@ -1,0 +1,54 @@
+type: object
+properties:
+  _id:
+    type: string
+  titleRest:
+    type: string
+  countTable:
+    type: number
+  titleTable:
+    type: string
+  enableDishesQr:
+    type: boolean
+  tariff:
+    type: string
+  adminCode:
+    type: string
+  waiterCode:
+    type: string
+  telegramBotName:
+    type: string
+  yandexMetrika:
+    type: string
+  isIntegrationWithIiko:
+    type: boolean
+  NameIiko:
+    type: string
+  NameRestaurant:
+    type: string
+  payments_ids:
+    type: string
+  enableTips:
+    type: boolean
+  tipsLayoutID:
+    type: string
+  enableBooking:
+    type: boolean
+  openTime:
+    type: string
+  closeTime:
+    type: string
+  buttons_ids:
+    $ref: './Buttons.yml'
+  orderType_ids:
+    $ref: './OrderType.yml'
+  orderStatus_ids:
+    $ref: './OrderStatus.yml'
+  colorsSchema_id:
+    $ref: './Color.yml'
+  pathRest:
+    type: string
+  city_ids:
+    $ref: './City.yml'
+  terms_ids:
+    $ref: './Term.yml'

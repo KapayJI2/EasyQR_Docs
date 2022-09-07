@@ -1,0 +1,22 @@
+type: object
+properties:
+  _id:
+    type: string
+    # example: "631773797573a7a3a51d7673"
+  name:
+    type: string
+    # example: 'qweqweqwe'
+  phone:
+    type: string
+    # example: '79038668210'
+  count:
+    type: number
+    # example: 4
+  datetime:
+    type: string
+    # example: "1970-01-20T05:08:51.907+00:00"
+  comment:
+    type: string
+    # example: 'comment'
+  user_id:
+    $ref: './User.yml'

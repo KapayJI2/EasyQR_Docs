@@ -1,0 +1,39 @@
+type: object
+properties:
+  _id:
+    type: string
+    # example: "631773797573a7a3a51d7673"
+  nickname:
+    type: string
+    # example: "Vasya"
+  birthdate:
+    type: string
+    # example: "1970-01-20T05:08:51.907+00:00"
+  name:
+    type: string
+    # example: "Vasyilij"
+  phone:
+    type: string
+    # example: "89038668210"
+  street:
+    type: string
+    # example: "TODO"
+  house:
+    type: string
+    # example: "house"
+  flat:
+    type: string
+    # example: "flat"
+  city:
+    $ref: './City.yml'
+    # type: string
+    # example: "city"
+  smsCode:
+    type: string
+    # example: "1234"
+  timeSendCode:
+    type: string
+    # example: "1970-01-20T05:08:51.907+00:00"
+  isAdmin:
+    type: boolean
+    example: false

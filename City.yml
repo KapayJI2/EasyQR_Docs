@@ -1,0 +1,12 @@
+type: object
+properties:
+  _id:
+    type: string
+  title:
+    type: string
+  deliveryPrice:
+    type: number
+  minSummOrder:
+    type: number
+  deliveryFree:
+    type: boolean

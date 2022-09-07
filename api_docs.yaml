@@ -1,0 +1,110 @@
+openapi: "3.0.2"
+info:
+  title: EasyQR API
+  version: "1.0"
+servers:
+  - url: https://localhost:3000/api/v1
+paths:
+  /booking/{id}:
+    get:
+      summary: Получить бронь по id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Получить бронь
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Booking"
+components:
+  schemas:
+    City:
+      type: object
+      properties:
+        _id:
+          type: string
+        title:
+          type: string
+        deliveryPrice:
+          type: number
+        minSummOrder:
+          type: number
+        deliveryFree:
+          type: boolean
+    User:
+      type: object
+      properties:
+        _id:
+          type: string
+          # example: "631773797573a7a3a51d7673"
+        nickname:
+          type: string
+          # example: "Vasya"
+        birthdate:
+          type: string
+          # example: "1970-01-20T05:08:51.907+00:00"
+        name:
+          type: string
+          # example: "Vasyilij"
+        phone:
+          type: string
+          # example: "89038668210"
+        street:
+          type: string
+          # example: "TODO"
+        house:
+          type: string
+          # example: "house"
+        flat:
+          type: string
+          # example: "flat"
+        city:
+          $ref: "#/components/schemas/City"
+          # type: string
+          # example: "city"
+        smsCode:
+          type: string
+          # example: "1234"
+        timeSendCode:
+          type: string
+          # example: "1970-01-20T05:08:51.907+00:00"
+        isAdmin:
+          type: boolean
+          example: false
+    Booking:
+      type: object
+      properties:
+        _id:
+          type: string
+          # example: "631773797573a7a3a51d7673"
+        name:
+          type: string
+          # example: 'qweqweqwe'
+        phone:
+          type: string
+          # example: '79038668210'
+        count:
+          type: number
+          # example: 4
+        datetime:
+          type: string
+          # example: "1970-01-20T05:08:51.907+00:00"
+        comment:
+          type: string
+          # example: 'comment'
+        user_id:
+          $ref: "#/components/schemas/User"
+
+    # Rest:
+    #   $ref: './Rest.yml'
+    # Term:
+    #   $ref: './Term.yml'
+    # OrderStatus:
+    #   $ref: './OrderStatus.yml'
+    # OrderType:
+    #   $ref: './OrderType.yml'

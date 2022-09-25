@@ -52,3 +52,4 @@ properties:
     $ref: './City.yml'
   terms_ids:
     $ref: './Term.yml'
+# 
